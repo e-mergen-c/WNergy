@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "257105783754",
+    "project_id": "wnergy",
+    "storage_bucket": "wnergy.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:257105783754:android:831321839f0b12f26afd33",
+        "android_client_info": {
+          "package_name": "com.example.wnergy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "257105783754-na72jfkkvbqus5icaj3iku474u6p96vp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtvrkGVdghM5bwzd2Nb6TX6Gxh7pckJjE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "257105783754-na72jfkkvbqus5icaj3iku474u6p96vp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
