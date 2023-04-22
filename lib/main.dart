@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import './screens/home_screen.dart';
+import 'package:wnergy/screens/wrapper.dart';
 
 void main() {
   runApp(const MyApp());
@@ -27,7 +26,7 @@ class MyApp extends StatelessWidget {
           bodySmall: TextStyle(fontSize: 12.0, fontWeight: FontWeight.bold, color: Colors.white),
         )
       ),
-      home: HomeScreen(),
+      home: Wrapper(),
     );
   }
 }
