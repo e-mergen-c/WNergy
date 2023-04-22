@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import './screens/home_screen.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -7,39 +9,25 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
+  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter First App',
-      theme: ThemeData(useMaterial3: true),
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Welcome to Flutter'),
+      title: 'WNergy',
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        colorScheme: ColorScheme.fromSwatch().copyWith(
+          primary: Colors.green,
+          secondary: Colors.green,
         ),
-        body: Container(
-          width: double.infinity,
-          padding: const EdgeInsets.all(12),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: const [
-              Text(
-                'WNergy',
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                  fontSize: 24,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
-              SizedBox(height: 16),
-              Text(
-                'Waste Not Want Not',
-                textAlign: TextAlign.center,
-              ),
-            ],
-          ),
-        ),
+        fontFamily: 'Inter',
+        textTheme: const TextTheme(
+          titleLarge: TextStyle(fontSize: 21.33, fontWeight: FontWeight.bold, color: Colors.white),
+          bodyMedium: TextStyle(fontSize: 16.0, fontWeight: FontWeight.bold, color: Colors.white),
+          bodySmall: TextStyle(fontSize: 12.0, fontWeight: FontWeight.bold, color: Colors.white),
+        )
       ),
+      home: HomeScreen(),
     );
   }
 }
